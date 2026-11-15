@@ -9,7 +9,8 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
-      <body>
+      {/* The body tag is right here, with the warning suppressor */}
+      <body suppressHydrationWarning>
         
         {/* FLOATING TRANSPARENT HEADER */}
         <header className="main-header">
@@ -32,13 +33,13 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           </nav>
         </header>
         
+        {/* PAGE CONTENT */}
         <main>{children}</main>
 
         {/* GLOBAL FOOTER */}
         <footer className="site-footer">
           <div className="footer-container">
             
-            {/* Column 1: Brand & Logo */}
             <div className="footer-col">
               <img 
                 src="https://iburuj1yfvzpdtt7.public.blob.vercel-storage.com/logo.png" 
@@ -50,7 +51,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               </p>
             </div>
 
-            {/* Column 2: Quick Links */}
             <div className="footer-col">
               <h4 className="footer-heading">Quick Links</h4>
               <a href="/sermons" className="footer-link">Sermons</a>
@@ -59,7 +59,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               <a href="/giving" className="footer-link">Give Online</a>
             </div>
 
-            {/* Column 3: Contact Us */}
             <div className="footer-col">
               <h4 className="footer-heading">Contact Us</h4>
               <p className="footer-text">
@@ -72,7 +71,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               </p>
             </div>
 
-            {/* Column 4: Social Media */}
             <div className="footer-col">
               <h4 className="footer-heading">Follow Us</h4>
               <a href="https://www.youtube.com/@cmcmcanadakingsassembly8558" target="_blank" rel="noreferrer" className="footer-link">
@@ -84,7 +82,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 
           </div>
 
-          {/* Copyright Bar */}
           <div className="footer-bottom">
             <p>&copy; 2026 Christ Miracle Church Mission Canada. All rights reserved.</p>
           </div>
