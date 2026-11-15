@@ -39,7 +39,44 @@ export default function Home() {
 
         </div>
       </section>
-      
+            {/* APP DOWNLOAD SECTION */}
+      <section className="app-section">
+        {/* Left Side: Blue Wavy Background & Phone Mockup */}
+        <div className="app-visual">
+          <div className="app-phone-mockup">
+            {/* Replace this image URL with a screenshot of your church app or a welcome screen */}
+            <img 
+              src="/app-screenshot.jpg"
+              alt="CMCM App" 
+              className="app-screen-image"
+            />
+          </div>
+        </div>
+
+        {/* Right Side: Text & Buttons */}
+        <div className="app-content">
+          <h2 className="app-title">Get The App!</h2>
+          <p className="app-description">
+            Live worship services, hope-filled messages, daily inspiration. 
+            Get the CMCM Canada app and have them all at your fingertips.
+          </p>
+          
+          <div className="app-badges">
+            <a href="#" className="store-badge">
+              <img 
+                src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Download_on_the_App_Store_Badge.svg" 
+                alt="Download on the App Store" 
+              />
+            </a>
+            <a href="#" className="store-badge">
+              <img 
+                src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" 
+                alt="Get it on Google Play" 
+              />
+            </a>
+          </div>
+        </div>
+      </section>
     </main>
   );
 }
