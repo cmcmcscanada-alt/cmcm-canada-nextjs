@@ -86,7 +86,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 
           {/* Copyright Bar */}
           <div className="footer-bottom">
-            <p>&copy; {new Date().getFullYear()} Christ Miracle Church Mission Canada. All rights reserved.</p>
+            <p>&copy; 2026 Christ Miracle Church Mission Canada. All rights reserved.</p>
           </div>
         </footer>
 
