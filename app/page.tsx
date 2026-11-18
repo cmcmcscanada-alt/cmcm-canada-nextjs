@@ -85,7 +85,7 @@ export default function Home() {
         <div className="app-visual">
           <div className="app-phone-mockup">
             <img
-              src="/app-screenshot.jpg"
+              src="/logo.png"
               alt="CMCM App"
               className="app-screen-image"
             />
